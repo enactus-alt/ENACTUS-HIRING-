@@ -19,4 +19,12 @@ import VisualEffects from './components/VisualEffects.vue';
   overflow: hidden;
   position: relative;
 }
+
+@media (max-width: 768px) {
+  #app-container {
+    overflow-y: auto; /* Enable scrolling on mobile */
+    min-height: 100vh;
+    height: auto; /* Allow height to grow with content */
+  }
+}
 </style>

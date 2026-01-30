@@ -68,6 +68,13 @@ const cardStyle = computed(() => ({
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .glass-container {
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+}
+
 /* Internal Glow Effect */
 .glass-container::before {
   content: '';

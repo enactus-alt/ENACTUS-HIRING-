@@ -72,7 +72,7 @@ import { useSpace } from '../composables/useSpace';
 const { triggerWarp } = useSpace();
 
 // Configuration
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwlHhOEdtuI3DectCd0Jq4CJF7EMq3RljtNTpaLteQIhE9bwDPxngpEFGsu4d6oGKCK/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyYk8BBmBIH7qvPQ2fQCych8bWJwIKlmibohSPNGE-bf-1yZA6eXGaodZaMYbI8XXOb/exec';
 
 interface Question {
   id: string;

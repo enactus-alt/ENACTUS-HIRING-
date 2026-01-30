@@ -397,28 +397,29 @@ onMounted(() => {
 @media (max-width: 768px) {
   .mission-control {
     padding-top: 10vh;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .mission-title {
-    font-size: 1.8rem;
-    letter-spacing: 3px;
-    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
   }
 
   .step-title {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
   }
 
-  .controls {
+    margin-top: 1.5rem;
     flex-direction: column-reverse;
-    gap: 1rem;
+    gap: 0.8rem;
   }
 
   .btn {
     width: 100%;
-    padding: 0.8rem;
+    padding: 0.7rem;
   }
 }
 </style>

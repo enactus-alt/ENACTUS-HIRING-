@@ -70,7 +70,7 @@ const cardStyle = computed(() => ({
 
 @media (max-width: 768px) {
   .glass-container {
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 16px;
   }
 }

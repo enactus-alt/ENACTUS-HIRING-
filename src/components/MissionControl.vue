@@ -411,7 +411,7 @@ onMounted(() => {
     font-size: 1.2rem;
     margin-bottom: 1rem;
   }
-
+  .controls {
     margin-top: 1.5rem;
     flex-direction: column-reverse;
     gap: 0.8rem;

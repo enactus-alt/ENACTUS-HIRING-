@@ -100,6 +100,7 @@ body::before {
 .preloader-logo {
     width: 120px;
     height: 120px;
+    border-radius: 20px;
     filter: drop-shadow(0 0 20px var(--color-gold));
 }
 
@@ -191,6 +192,7 @@ body::before {
     width: 42px;
     height: 42px;
     object-fit: contain;
+    border-radius: 10px;
 }
 
 .brand-text {
@@ -391,6 +393,7 @@ body::before {
 .mobile-logo {
     width: 45px;
     height: 45px;
+    border-radius: 10px;
 }
 
 .mobile-brand {
@@ -438,6 +441,12 @@ body::before {
     background: rgba(255, 194, 34, 0.1);
     border-radius: 8px;
     color: var(--color-gold);
+}
+
+.mobile-link-icon svg {
+    width: 18px;
+    height: 18px;
+    stroke: var(--color-gold);
 }
 
 .mobile-cta {
@@ -834,13 +843,20 @@ body::before {
 }
 
 .highlight-icon {
-    font-size: 1.5rem;
     flex-shrink: 0;
     width: 40px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgba(255, 194, 34, 0.1);
+    border-radius: 10px;
+}
+
+.highlight-icon svg {
+    width: 22px;
+    height: 22px;
+    stroke: var(--color-gold);
 }
 
 .highlight-item strong {
@@ -880,6 +896,16 @@ body::before {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: var(--color-gold);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.mission-icon {
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+    stroke: var(--color-gold);
 }
 
 .glass-card p {
@@ -1209,6 +1235,7 @@ body::before {
     width: 80px;
     height: auto;
     margin-bottom: 1rem;
+    border-radius: 16px;
 }
 
 .footer-tagline {

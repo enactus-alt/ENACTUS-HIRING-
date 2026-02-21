@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Enactus ISET Djerba — Recrutement</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <header class="hero">
+      <div class="hero-left">
+        <img class="logo" src="assets/Logo Enactus.jpg.jpeg" alt="Enactus ISET Djerba" />
+        <div>
+          <h1>Recrutement Enactus ISET Djerba</h1>
+          <p>Formulaire d’entretien — Leadership • Entrepreneuriat • Impact</p>
+        </div>
+      </div>
+      <div class="hero-badges">
+        <span class="badge">Impact</span>
+        <span class="badge">Leadership</span>
+        <span class="badge">Entrepreneuriat</span>
+      </div>
+    </header>
+
+    <main class="card">
+      <div class="card-head">
+        <h2>Informations du candidat</h2>
+        <p>Merci de remplir tous les champs. Le timestamp est automatique.</p>
+      </div>
+
+      <form id="form" class="card-body">
+        <div class="grid">
+          <div class="field">
+            <label for="NomPrenom">Nom & Prénom</label>
+            <input id="NomPrenom"/>
+          </div>
+
+          <div class="field">
+            <label for="Email">Email</label>
+            <input id="Email" type="email"/>
+          </div>
+
+          <div class="field">
+            <label for="DateNaissance">Date de naissance</label>
+            <input id="DateNaissance" type="date" required />
+          </div>
+
+          <div class="field">
+            <label for="Departement">Département</label>
+            <select id="Departement" required>
+              <option value="" selected disabled>Choisir...</option>
+              <option>Génie électrique</option>
+              <option>Génie mécanique</option>
+              <option>IT</option>
+              <option>Eco Gestion</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="PourquoiEnactus">Pourquoi Enactus ?</label>
+          <textarea id="PourquoiEnactus" required placeholder="Explique pourquoi tu veux participer à Enactus..."></textarea>
+        </div>
+
+        <div class="field">
+          <label for="Apprendre">Tu veux apprendre quoi ?</label>
+          <textarea id="Apprendre" required placeholder="Ex: gestion de projet, communication, pitching, etc."></textarea>
+        </div>
+
+        <div class="field">
+          <label for="Motivation">Motivation</label>
+          <textarea id="Motivation" required placeholder="Explique ta motivation et ton engagement..."></textarea>
+        </div>
+
+        <div class="actions">
+          <button class="btn" type="submit">Envoyer la candidature</button>
+          <button class="btn ghost" type="button" id="clearBtn">Effacer</button>
+        </div>
+
+        <div id="msg" class="msg"></div>
+      </form>
+    </main>
+
+    <footer class="footer">
+      © Enactus ISET Djerba — Recruitment Form
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    document.getElementById("clearBtn").addEventListener("click", () => {
+      document.getElementById("form").reset();
+      document.getElementById("msg").textContent = "Effacé ✅";
+    });
+  </script>
+</body>
+</html>

@@ -192,18 +192,14 @@ body::before {
 }
 
 .nav-brand img {
-    width: 38px;
-    height: 38px;
-    object-fit: cover;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 3px;
-    border: 2px solid rgba(255, 194, 34, 0.3);
-    transition: border-color 0.3s ease;
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
 }
 
 .nav-brand:hover img {
-    border-color: var(--color-gold);
+    transform: scale(1.1);
 }
 
 .brand-text {
@@ -402,12 +398,9 @@ body::before {
 }
 
 .mobile-logo {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 3px;
-    border: 2px solid rgba(255, 194, 34, 0.3);
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
 }
 
 .mobile-brand {
